@@ -1,0 +1,62 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Sprachgesteuerter Geldbeutel",
+          "examplePhrases": [
+            "Wieviel Geld habe ich im Geldbeutel?",
+            "plus 3 Euro",
+            "minus 20 Cents"
+          ],
+          "keywords": [
+            "voice",
+            "wallet"
+          ],
+          "name": "Sprachgeldbeutel",
+          "description": "Verwalte Dein Geld sprachgesteuert.",
+          "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
+          "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:071822210363:function:0042f04a-e54f-4fcd-8fed-23983bb6d867:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:071822210363:function:0042f04a-e54f-4fcd-8fed-23983bb6d867:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:071822210363:function:0042f04a-e54f-4fcd-8fed-23983bb6d867:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:071822210363:function:0042f04a-e54f-4fcd-8fed-23983bb6d867:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "de-DE": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sprach geldbeutel",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "Transaction",
+          "slots": [
+            {
+              "name": "plusminus",
+              "type": "plusminus"
+            },
+            {
+              "name": "euro",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "cents",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "currency",
+              "type": "currency"
+            },
+            {
+              "name": "kleingeld",
+              "type": "kleingeld"
+            }
+          ],
+          "samples": [
+            "{plusminus} {euro} {currency} und {cents} {kleingeld}",
+            "{plusminus} {euro} {currency}",
+            "{plusminus} {cents} {kleingeld}",
+            "ich nehme  {euro} {currency} {cents} {kleingeld} {plusminus} meinen Geldbeutel",
+            "ich lege  {euro} {currency} {cents} {kleingeld} {plusminus} meinen Geldbeutel",
+            "{plusminus} {euro} {currency} {cents} {kleingeld}"
+          ]
+        },
+        {
+          "name": "WhatIsMyBalance",
+          "slots": [],
+          "samples": [
+            "Was habe ich",
+            "Wieviel",
+            "Wieviel Geld ist in meinem Geldbeutel"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "0",
+              "name": {
+                "value": "minus",
+                "synonyms": [
+                  "aus",
+                  "weg",
+                  "weniger"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "plus",
+                "synonyms": [
+                  "in",
+                  "mehr",
+                  "dazu"
+                ]
+              }
+            }
+          ],
+          "name": "plusminus"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "euro",
+                "synonyms": [
+                  "euros"
+                ]
+              }
+            }
+          ],
+          "name": "currency"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cent",
+                "synonyms": [
+                  "cents"
+                ]
+              }
+            }
+          ],
+          "name": "kleingeld"
+        }
+      ]
+    }
+  },
+  "version": "8"
+}
