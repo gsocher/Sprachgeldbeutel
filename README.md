@@ -1,0 +1,2 @@
+# Sprachgeldbeutel
+Alexa Skill Sprachgeldbeutel
